@@ -26,13 +26,15 @@ Menu
 ''')
 
 def encoder(user_password):
+    encoded_password = ''
     for num in user_password:
         num = int(num)
         num += 3
-        encoded_password += str(num)
+        encoded_password += str(num)  
     return encoded_password
     
 def decoder(encoded_password):
+    user_password = ''
     for num in encoded_password:
         num = int(num)
         num -= 3
