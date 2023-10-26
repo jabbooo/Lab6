@@ -38,12 +38,9 @@ def encoder(user_password):
     
 def decoder(encoded_password):
     user_password = ''
-    num = 0
     for num in encoded_password:
         num = int(num)
         num -= 3
-        if num < 0:
-            num = 9 - num
         user_password += str(num)
     return user_password
 
