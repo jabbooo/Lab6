@@ -35,10 +35,10 @@ def encoder(user_password):
     
 def decoder(encoded_password):
     user_password = ''
-    for num in encoded_password:
-        num = int(num)
-        num -= 3
-        user_password += str(num)
+    for i in encoded_password:
+        i = int(i)
+        i -= 3
+        user_password += str(i)
     return user_password
 
 
