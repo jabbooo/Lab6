@@ -32,7 +32,7 @@ def encoder(user_password):
         num = int(num)
         num += 3
         if num > 9:
-            num = num % 9
+            num = num % 9 - 1
         encoded_password += str(num)  
     return encoded_password
     
